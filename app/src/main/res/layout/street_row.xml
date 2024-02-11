@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_50"
+    android:layout_margin="10dp"
+    tools:context=".CustomRow">
+
+    <LinearLayout
+        android:id="@+id/layoutStreetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/streetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="Custom Street"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linerOption12"
+        android:layout_below="@id/layoutStreetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightgreen"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:text="Custom Street"/>
+        <TextView
+            android:id="@+id/option2"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lightseagreen"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:text="Custom Street"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/linerOption12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkseagreen"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:text="Custom Street" />
+
+    </LinearLayout>
+
+</RelativeLayout>
